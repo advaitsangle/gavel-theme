@@ -1,0 +1,116 @@
+html, body{
+  background-color: white;
+  font-family: "Libre Baskerville" , "EB Garamond", "Times New Roman", serif;
+  font-size: 17px;
+  font-weight: 500;
+}
+p{
+  margin-bottom: 0.25em;
+}
+#write{
+  max-width: 70%;
+  margin: auto;
+}
+
+#write h1, h2, h3, h4, h5, h6{
+  font-family: "avenir", sans-serif;
+  border-bottom: 1px solid black;
+}
+
+#write h1{
+  font-size: 2.5em;
+}
+
+#write h2{
+  font-size: 2em;
+}
+
+#write h3{
+  font-size: 1.5em;
+}
+
+#write h4{
+  font-size: 1.2em;
+  color: darkgray;
+}
+
+#write h5{
+  font-size: 1em;
+  color: darkgray;
+}
+
+#write a{
+  color: black;
+}
+#write a:hover{
+  background-color: black;
+  color: white;
+  text-decoration: none;
+}
+
+#write blockquote{
+  background-color: lightgray;
+  border-left: 10px solid darkgray;
+  margin-left: 1em;
+  padding: 0.3em 0 0.3em 1em;
+}
+
+#write hr{
+  background-color: black;
+  height: 1px;
+}
+
+
+
+ol{
+  list-style-type: decimal;
+}
+ol ol{
+  list-style-type: lower-alpha;
+}
+ol ol ol{
+  list-style-type: lower-roman;
+}
+
+img{
+    margin:auto;
+}
+
+td, th{
+  border: 1px solid black;
+  padding: 0.3em;
+}
+
+table tr:nth-child(2n),
+thead {
+    background-color: lightgray;
+}
+
+.on-focus-mode  .md-focus{
+  font-size: 1.1em;
+}
+
+.code-tooltip {
+    box-shadow: 0 3px 3px 0 darkgray;
+}
+
+.md-fences, code {
+  background-color: lightgray;
+  color: rgb(76,76,76);
+  border: 1px;
+  border-radius: 3px;
+  margin-left: 1em;
+  padding: 0.3em 0 0.3em 1em;
+}
+
+@media print {
+    #write{
+      max-width: 100%;
+      margin: 0 0 0 0;
+      font-size: 10px;
+      line-height: 0.75em;
+    }
+    .typora-export * {
+        -webkit-print-color-adjust: exact;
+    }
+}
